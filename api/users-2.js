@@ -1,12 +1,12 @@
-import { MongoClient, ObjectId } from 'mongodb';
+import { MongoClient } from 'mongodb';
 
 const uri = process.env.MONGO_URI;
 
 export default async function handler(req, res) {
   const client = new MongoClient(uri);
   await client.connect();
-  const db = client.db('myDatabase');
-  const collection = db.collection('users-2');
+  const db = client.db('myDatabase'); // Replace with your actual database name
+  const collection = db.collection('users-2'); // Replace with your actual collection name
 
   if (req.method === 'GET') {
     try {
