@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "routes": [
+      { "src": "/api/users-2", "dest": "/api/users-2.js" },
+      { "src": "/api/component", "dest": "/api/component.js" }
+    ]
+  }
+  

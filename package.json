@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+   
+    "start": "vercel dev"
   },
   "author": "rafi",
   "license": "ISC",
@@ -22,3 +23,5 @@
     "nodemon": "^3.1.7"
   }
 }
+
+
