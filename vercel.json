@@ -1,8 +1,16 @@
 {
     "version": 2,
+    "builds": [
+      {
+        "src": "pages/api/**/*.js",
+        "use": "@vercel/node"
+      }
+    ],
     "routes": [
-      { "src": "/api/users-2", "dest": "/api/users-2.js" },
-      { "src": "/api/component", "dest": "/api/component.js" }
+      {
+        "src": "/api/(.*)",
+        "dest": "/pages/api/$1"
+      }
     ]
   }
   

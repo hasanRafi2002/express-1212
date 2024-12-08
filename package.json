@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
    
-    "start": "vercel dev"
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "start": "vercel start"
   },
   "author": "rafi",
   "license": "ISC",
@@ -20,7 +22,9 @@
     "node": "20.7.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+        "mongodb": "^4.0.0",
+    "vercel": "^3.0.0"
   }
 }
 
